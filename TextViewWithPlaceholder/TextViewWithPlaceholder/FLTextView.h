@@ -12,6 +12,6 @@
 
 @property (nonatomic, strong) NSString *FLPlaceholder;
 
-@property (nonatomic, strong) UIColor *FLPlaceHolderColor;
+@property (nonatomic, strong) UIColor *FLPlaceholderColor;
 
 @end

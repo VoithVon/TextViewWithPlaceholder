@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 
 #pragma mark --------- 调用 FLTextView ---------
     
@@ -33,6 +34,13 @@
     [self.view addSubview:textView];
 
 }
+
+//触摸回收键盘
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [self.view endEditing:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -34,7 +34,7 @@
         
         self.placeholderLabel = placeholderLabel; //赋值
         
-        self.FLPlaceHolderColor = [UIColor lightGrayColor];
+        self.FLPlaceholderColor = [UIColor lightGrayColor];
         
         self.font = [UIFont systemFontOfSize:15];
         
@@ -82,22 +82,22 @@
 }
 
 
-- (void)setMyPlaceHolderColor:(UIColor *)myPlaceHolderColor {
+- (void)setFLPlaceholderColor:(UIColor *)placeholderColor {
     
-    _FLPlaceHolderColor = myPlaceHolderColor;
+    _FLPlaceholderColor = placeholderColor;
     
-    self.placeholderLabel.textColor = myPlaceHolderColor;
+    self.placeholderLabel.textColor = placeholderColor;
     
 }
 
 
 
-- (void)setMyPlaceholder:(NSString *)myPlaceholder {
+- (void)setFLPlaceholder:(NSString *)placeholder {
     
-    _FLPlaceholder = [myPlaceholder copy];
+    _FLPlaceholder = [placeholder copy];
     
     //设置文字
-    self.placeholderLabel.text = myPlaceholder;
+    self.placeholderLabel.text = placeholder;
     
     [self setNeedsLayout]; //重新计算frame
     
